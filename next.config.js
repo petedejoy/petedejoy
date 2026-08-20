@@ -2,6 +2,8 @@
 const nextConfig = {
   async redirects() {
     // Legacy short-slug URLs from the old Netlify `_redirects` file.
+    // (on-anxiety, prs-silver-sky, and conformist redirects were removed
+    // along with those posts.)
     return [
       { source: "/mongodb", destination: "/writing/mongodb", permanent: true },
       {
@@ -9,13 +11,6 @@ const nextConfig = {
         destination: "/writing/software-engineer",
         permanent: true,
       },
-      { source: "/on-anxiety", destination: "/writing/on-anxiety", permanent: true },
-      {
-        source: "/prs-silver-sky",
-        destination: "/writing/prs-silver-sky",
-        permanent: true,
-      },
-      { source: "/conformist", destination: "/writing/conformist", permanent: true },
     ]
   },
 }
