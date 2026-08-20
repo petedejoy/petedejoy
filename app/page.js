@@ -1,21 +1,21 @@
-import { PT_Serif } from "next/font/google"
-import BusinessCard from "../components/BusinessCard"
-
-const ptSerif = PT_Serif({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-card",
-  display: "swap",
-})
-
 export const metadata = {
   title: "Pete DeJoy",
 }
 
 export default function HomePage() {
   return (
-    <main className={ptSerif.variable}>
-      <BusinessCard />
-    </main>
+    <div
+      style={{
+        minHeight: "100dvh",
+        width: "100%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        background: "#ffffff",
+        fontSize: "4rem",
+      }}
+    >
+      🔭
+    </div>
   )
 }
