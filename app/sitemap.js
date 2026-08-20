@@ -1,9 +1,11 @@
 import { getAllPostSlugs } from "../lib/posts"
-import { getAllProjectSlugs } from "../lib/projects"
 import { siteUrl } from "../lib/site"
 
+// Only the homepage and the two posts we want indexed are listed here.
+// There's no /writing index page to browse — this file is the only thing
+// that tells search engines the posts exist.
 export default function sitemap() {
-  const staticRoutes = ["", "/about", "/projects", "/writing", "/music"].map((route) => ({
+  const staticRoutes = [""].map((route) => ({
     url: `${siteUrl}${route}`,
   }))
 
@@ -11,9 +13,5 @@ export default function sitemap() {
     url: `${siteUrl}/writing/${slug}`,
   }))
 
-  const projectRoutes = getAllProjectSlugs().map((slug) => ({
-    url: `${siteUrl}/projects/${slug}`,
-  }))
-
-  return [...staticRoutes, ...postRoutes, ...projectRoutes]
+  return [...staticRoutes, ...postRoutes]
 }

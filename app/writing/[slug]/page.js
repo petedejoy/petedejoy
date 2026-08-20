@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { MDXRemote } from "next-mdx-remote/rsc"
 import remarkEmoji from "remark-emoji"
 import { notFound } from "next/navigation"
@@ -53,6 +54,9 @@ export default async function PostPage({ params }) {
 
   return (
     <section className={styles.template}>
+      <Link href="/" className={styles.link}>
+        ← petedejoy.com
+      </Link>
       <div className={styles.info}>
         <h1>{title}</h1>
         <p>{description}</p>
