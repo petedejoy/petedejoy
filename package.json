@@ -1,64 +1,36 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "petedejoy",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Pete DeJoy's personal site — writing, projects, and things that inspire him. Built in Next.js.",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "gatsby clean && gatsby develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.{js,jsx,css,md,mdx}\""
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.6.14",
-    "@mdx-js/react": "^1.6.14",
-    "@mdx-js/tag": "^0.20.3",
-    "@mitchallen/react-email-input-field": "^0.1.6",
-    "@raae/gatsby-remark-oembed": "^0.1.1",
-    "change-case": "^3.1.0",
-    "classnames": "^2.2.6",
-    "date-fns": "^2.15.0",
-    "dotenv": "^8.2.0",
-    "gatsby": "^2.13.21",
-    "gatsby-image": "^2.4.13",
-    "gatsby-mdx": "^0.6.3",
-    "gatsby-plugin-google-analytics": "^2.3.13",
-    "gatsby-plugin-mdx": "^1.2.29",
-    "gatsby-plugin-netlify": "^2.3.11",
-    "gatsby-plugin-react-helmet": "^3.3.10",
-    "gatsby-plugin-sharp": "^2.6.25",
-    "gatsby-plugin-sitemap": "^2.4.11",
-    "gatsby-remark-embed-video": "^1.7.1",
-    "gatsby-remark-emojis": "^0.3.3",
-    "gatsby-remark-images": "^3.3.21",
-    "gatsby-source-filesystem": "^2.3.23",
-    "gatsby-transformer-json": "^2.4.11",
-    "gatsby-transformer-remark": "^2.8.27",
-    "gatsby-transformer-sharp": "^2.2.3",
-    "lodash": "^4.17.21",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-columns": "^1.2.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1",
-    "react-icons": "^3.10.0",
-    "react-markdown": "^4.3.1",
-    "react-responsive-navbar": "^1.0.11",
-    "react-social-icons": "^4.1.0",
-    "recharts": "^1.8.5",
-    "remark-emoji": "^2.1.0"
+    "classnames": "^2.5.1",
+    "date-fns": "^4.4.0",
+    "gray-matter": "^4.0.3",
+    "next": "16.3.1",
+    "next-mdx-remote": "^6.0.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "recharts": "^3.10.1",
+    "remark": "^15.0.1",
+    "remark-emoji": "^5.0.2",
+    "remark-html": "^16.0.1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.3.1",
+    "prettier": "^3.9.6"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/petedejoy/petedejoy"
   }
 }

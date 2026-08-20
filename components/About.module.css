@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.imageContainer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+
+
+.hero {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.blur {
+  /* -webkit-animation: text-focus-in .3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in .3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; */
+}
+
+.headshot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  padding-top: 4rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .headshot {
+    width: 40%;
+  }
+}
+
+.intro {
+  color: var(--mainBlack);
+  text-decoration: none;
+  font-family: "Cardo", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 40px;
+  letter-spacing: .03em;
+  line-height: 1.4em;
+  text-transform: none;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.body {
+  font-size: 2rem;
+  padding: 1rem;
+  padding-bottom: 4rem;
+}
+
+.subtitle {
+  color: var(--mainBlack);
+  text-decoration: none;
+  font-family: baskerville-urw;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: 0em;
+  line-height: 1.4em;
+  text-transform: none;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.icon {
+  margin: 0 .5rem 0 0;
+}
+
+.caption{
+
+}

@@ -1,5 +1,25 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ce1d1170-9176-4b52-9efb-0afdc1fb2f86/deploy-status)](https://app.netlify.com/sites/determined-neumann-d8aff7/deploys)
+# petedejoy
 
-# Pete DeJoy's Personal Site
+Pete DeJoy's personal site — writing, projects, and things that inspire him. Built in [Next.js](https://nextjs.org) and deployed on [Vercel](https://vercel.com).
 
-Built from scratch in [Gatsby.js](https://gatsbyjs.org)
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Content
+
+Everything is local content — no CMS:
+
+- `content/posts/` — MDX blog posts
+- `content/projects/` — MDX project write-ups
+- `content/resume/` — work/education/affiliations markdown + `skills.json`
+- `content/about/`, `content/music/` — the about and music pages
+
+Images live in `public/`, mirroring the same structure.
+
+## Deploying
+
+This is a zero-config Next.js app — connect the repo in the [Vercel dashboard](https://vercel.com/new) and it'll build with no extra setup. See `.env.example` for optional environment variables.
