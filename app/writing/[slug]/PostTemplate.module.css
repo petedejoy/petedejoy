@@ -1,0 +1,65 @@
+.template {
+  width: 80vw;
+  margin: auto;
+  max-width: 750px;
+  padding: 0.5rem;
+  background: var(--mainWhite);
+}
+
+.link {
+  border: 1px solid var(--mainBlack);
+  padding: 4px 8px;
+  display: inline-block;
+  color: var(--mainBlack);
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 2rem;
+}
+
+.link:hover {
+  background: var(--mainBlack);
+  color: var(--mainWhite);
+}
+
+.info {
+  text-align: center;
+}
+
+.info p {
+  margin: .5rem;
+}
+
+.image {
+  border-radius: 15px;
+  margin: 2rem 0 2rem 0;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+.content {
+  margin: 2rem 0;
+}
+
+.content img {
+  border-radius: 8px;
+  box-shadow: .2rem .5rem 1rem .15rem var(--darkGrey);
+  margin: 1.5rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .content table {
+    padding: 0rem;
+  }
+  .content td {
+    padding: 0rem;
+  }
+  .template {
+    padding: 0rem;
+  }
+}
