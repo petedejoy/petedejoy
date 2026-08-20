@@ -1,20 +1,21 @@
-import About from "../components/About"
-import { siteUrl } from "../lib/site"
+import { PT_Serif } from "next/font/google"
+import BusinessCard from "../components/BusinessCard"
+
+const ptSerif = PT_Serif({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-card",
+  display: "swap",
+})
 
 export const metadata = {
   title: "Pete DeJoy",
-  openGraph: {
-    title: "Pete DeJoy",
-    description: "Writing, projects, and music.",
-    url: siteUrl,
-    images: ["/images/home-meta.png"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    images: ["/images/home-meta.png"],
-  },
 }
 
 export default function HomePage() {
-  return <About />
+  return (
+    <main className={ptSerif.variable}>
+      <BusinessCard />
+    </main>
+  )
 }

@@ -1,6 +1,4 @@
 import "./globals.css"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
 import GoogleAnalytics from "../components/GoogleAnalytics"
 import { siteUrl, siteTitle, siteDescription, gaMeasurementId } from "../lib/site"
 
@@ -30,18 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header />
-        <div
-          style={{
-            margin: "0 auto",
-            maxWidth: 960,
-            padding: "0px 1.0875rem 1.45rem",
-            paddingTop: 0,
-          }}
-        >
-          {children}
-        </div>
-        <Footer />
+        {children}
         {gaMeasurementId && <GoogleAnalytics id={gaMeasurementId} />}
       </body>
     </html>
